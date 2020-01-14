@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/PaperCypress/YunzhenHo/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PaperCypress/YunzhenHo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;>
+      <a-marker preset="hiro">
+        <a-image src="imgs/9.BG.jpg" scale="3 3.492 2" position="0 0 0" rotation="-90 0 0"></a-image>
+        <a-image src="imgs/8.circle_color.png" scale="2 2.492 2" position="0 0.03 0" rotation="-90 0 0"></a-image>
+        <a-image src="imgs/7.circle.png" scale="2 2.492 2" position="0 0.05 0" rotation="-90 0 0"></a-image>
+        <a-image src="imgs/6.Branches.png" scale="2 2.492 2" position="0 0.1 0" rotation="-90 0 0"></a-image>  
+        <a-image src="imgs/5.girl_2.png" scale="2 2.492 2" position="0 0.25 0" rotation="-85 0 0"></a-image>  
+        <a-image src="imgs/4.ground glower.png" scale="2 2.492 2" position="0 0.24 0" rotation="-90 0 0"></a-image>  
+        <a-image src="imgs/3.frame.png" scale="2 2.492 2" position="0 0.36 0" rotation="-89 0 0"></a-image>  
+        <a-image src="imgs/2.frame flowers.png" scale="2 2.492 2" position="0 0.4 0" rotation="-90 0 0"></a-image>  
+        <a-image src="imgs/1.corner_poinsettia.png" scale="2 2.492 2" position="0 0.42 0" rotation="-90 0 0"></a-image>  
+        <a-image src="imgs/0.poinsettia.png" scale="2 2.492 2" position="0 0.43 0" rotation="-90 0 0"></a-image>  
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
