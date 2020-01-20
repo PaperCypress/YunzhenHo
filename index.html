@@ -5,24 +5,17 @@
   </head>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
-
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded="" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: color_and_matrix; matrixCodeType: 3x3;smooth:true;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-
-      <a-marker preset="hiro">
-       
-        <a-entity rotation="-90 0 0">
+    <a-scene embedded="" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: color_and_matrix; matrixCodeType: 3x3;smooth:true;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled:false">
+      <a-marker type="pattern" preset="custom" url="patterns/pattern-vision.patt" material="" arjs-anchor="" arjs-hit-testing="">
+        <a-entity rotation="-90 0 0" position="0 -0.43 0">
         <a-image src="imgs/black.jpg" scale="2 0.44 1" position="0 -1.246 0.105" rotation="90 0 0"></a-image>
         <a-image src="imgs/9.BG.jpg" scale="2 2.492 2" position="0 0 0"></a-image>
-        
-        <a-image src="imgs/7.circle.png" scale="0.8652‬‬ 0.880922 1" position="-0.765625‬ -0.029296875 0.07"></a-image>
-       
-        
-        <a-image src="imgs/7.circle.png" scale="0.8652‬‬ 0.880922 1" position="0.7656 -0.029296875 0.08"></a-image>
-        
+        <a-image src="imgs/7.circle.png" scale="0.8652‬‬ 0.880922 1" position="-0.765625‬ -0.029296875 0.08"></a-image>
+        <a-image src="imgs/7.circle.png" scale="0.8652‬‬ 0.880922 1" position="0.765625 -0.029296875 0.08"></a-image>
         <a-image src="imgs/6.Branches.png" scale="0.2754 0.5597032‬ 1" position="-0.2099609375 0.0750078125‬ 0.2"></a-image>  
         <a-image src="imgs/6.Branches.png" scale="-0.2754 0.5597032‬ 1" position="0.2099609375 0.0750078125‬ 0.2"></a-image>  
-        <a-image src="imgs/5.girl_2.png" scale="2 2.492 2" position="0 0 0.25"></a-image>  
+        <a-image src="imgs/5.girl_2.png" scale="2 2.492 2" position="0 0 0.25"></a-image>
         <a-image src="imgs/4.ground glower.png" scale="0.666‬ 0.7032424‬ 2" position="-0.5400390625 -0.709392578125 0.32"></a-image>  
         <a-image src="imgs/4.ground glower.png" scale="-0.666‬ 0.7032424‬ 2" position="0.5400390625 -0.709392578125 0.32"></a-image>  
         <a-image src="imgs/3.frame.png" scale="2 2.492 2" position="0 0 0.36" rotation="1 0 0"></a-image>  
@@ -31,8 +24,8 @@
         <a-image src="imgs/1.corner_poinsettia.png" scale="0.5352‬ 0.6107892 2" position="0.732421875‬ -0.94180078125 0.44" rotation="0 0 -180"></a-image>
         <a-image src="imgs/1.corner_poinsettia.png" scale="0.5352‬ 0.6107892 2" position="-0.732421875‬ -0.94180078125 0.44" rotation="0 0 -270"></a-image>
         <a-image src="imgs/0.poinsettia.png" scale="0.6054 0.8736952 2" position="-0.6328125 0.009734375 0.43"></a-image>
-        <a-image src="imgs/0.poinsettia.png" scale="-0.6054 0.8736952 2" position="0.6328125 0.009734375 0.43"></a-image>    
-      </a-entity position='0 -0.5 0'>
+        <a-image src="imgs/0.poinsettia.png" scale="-0.6054 0.8736952 2" position="0.6328125 0.009734375 0.43"></a-image>
+      </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
